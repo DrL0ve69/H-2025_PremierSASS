@@ -1,0 +1,29 @@
+body {
+font-family: $font-stack;
+margin: 0;
+padding: 0;
+}
+
+h1,
+h2 {
+ color: $secondary-color;
+
+}
+
+.main-nav ul
+{
+    @include flex-menu;
+    li
+    {
+        margin: 0 $gutter;
+        a
+        {
+            color: $secondary-color;
+            &:hover
+            {
+                color: $primary-color;
+            }
+        }
+
+    }
+}
